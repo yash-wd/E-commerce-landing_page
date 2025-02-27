@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+
+    <!-- Importing Custom Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/hero.css" />
+    <link rel="stylesheet" href="assets/css/cards.css" />
+    <link rel="stylesheet" href="assets/css/products.css" />
+    <link rel="stylesheet" href="assets/css/offers.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+
+    <!-- Importing Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Importing Font Awesome Kit -->
+    <script
+      src="https://kit.fontawesome.com/f1105d4203.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="header">
+      <div class="top-bar">
+        <div class="container">
+          <p class="top-text">Free shipping on all U.S orders $50+</p>
+        </div>
+      </div>
+
+      <nav class="navbar">
+        <!-- Left Side: Search Box -->
+        <div class="navbar-left">
+          <div class="search-container">
+            <input
+              type="text"
+              class="search-box"
+              placeholder="Search product"
+            />
+            <i class="fa fa-search search-icon"></i>
+          </div>
+        </div>
+
+        <!-- Center: Logo -->
+        <div class="navbar-center">
+          <a href="#" class="logo">
+            <img
+              src="./assets/images/navbar/logo.png"
+              alt="Glowing"
+              width="180px"
+              height="auto"
+            />
+          </a>
+        </div>
+
+        <!-- Right Side: Icons -->
+        <div class="navbar-right">
+          <i class="fa-regular fa-user"></i>
+          <div class="icon-with-badge">
+            <i class="fa-regular fa-star"></i>
+            <span class="badge">3</span>
+          </div>
+          <div class="icon-with-badge">
+            <i class="fa fa-shopping-cart"></i>
+            <span class="badge">3</span>
+          </div>
+          <i class="fa-regular fa-sun"></i>
+        </div>
+      </nav>
+
+      <!-- Navbar Menu -->
+      <div class="menu">
+        <ul class="menu-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Pages</a></li>
+          <li><a href="#">Blocs</a></li>
+          <li><a href="#">Docs</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="carousel">
+      <div class="carousel-slides">
+        <div
+          class="slide active"
+          style="background-image: url('./assets/images/hero/hero-slider.jpg')"
+        ></div>
+        <div
+          class="slide"
+          style="background-image: url('./assets/images/hero/hero-slider1.jpg')"
+        ></div>
+        <div
+          class="slide"
+          style="background-image: url('./assets/images/hero/hero-slider2.jpg')"
+        ></div>
+      </div>
+      <div class="carousel-dots"></div>
+      <div class="carousel-content">
+        <h2 class="animated-text">
+          Reveal The <br />
+          Beauty of Skin
+        </h2>
+        <p class="animated-text">
+          Made using clean, non-toxic ingredients, our products are designed for
+          everyone.
+          <br />
+          <br />
+          <span>Starting at $7.99</span>
+        </p>
+        <!-- <p class="animated-text price">Starting at $7.99</p> -->
+        <button class="carousel-btn animated-btn">Shop Now</button>
+      </div>
+    </section>
+
+    <!-- Product Cards -->
+    <section class="cards-section">
+      <div class="card">
+        <div
+          class="card-image"
+          style="background-image: url('./assets/images/cards/banner-08.jpg')"
+        ></div>
+        <div class="card-content">
+          <div class="card-header">
+            <h3>Summer Collection</h3>
+            <p>Starting at $17.99</p>
+          </div>
+          <a href="#" class="card-link">Shop Now →</a>
+        </div>
+      </div>
+      <div class="card">
+        <div
+          class="card-image"
+          style="background-image: url('./assets/images/cards/banner-06.jpg')"
+        ></div>
+        <div class="card-content">
+          <div class="card-header">
+            <h3>What's New?</h3>
+            <p>Get the glow</p>
+          </div>
+          <a href="#" class="card-link">Discover Now →</a>
+        </div>
+      </div>
+      <div class="card">
+        <div
+          class="card-image"
+          style="background-image: url('./assets/images/cards/banner-07.jpg')"
+        ></div>
+        <div class="card-content">
+          <div class="card-header">
+            <h3>Buy 1 Get 1</h3>
+            <p>Starting at $7.99</p>
+          </div>
+          <a href="#" class="card-link">Discover Now →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Cards - Bestsellers -->
+    <section class="bestseller-carousel">
+      <div class="bestseller-title-row">
+        <h2 class="bestseller-title">Our Bestsellers</h2>
+        <a href="#" class="bestseller-shop-link">Shop All Products →</a>
+      </div>
+      <div class="bestseller-carousel-wrapper">
+        <div class="bestseller-carousel-items">
+          <!-- Product Card 1 -->
+          <div class="bestseller-card">
+            <div class="bestseller-card-image">
+              <img
+                src="./assets/images/products/product-01.jpg"
+                alt="Shield Conditioner"
+              />
+              <div class="bestseller-hover-icons">
+                <span class="bestseller-icon"
+                  ><i class="fas fa-shopping-bag"></i
+                ></span>
+                <span class="bestseller-icon"><i class="fas fa-eye"></i></span>
+                <span class="bestseller-icon"><i class="fas fa-star"></i></span>
+                <span class="bestseller-icon"
+                  ><i class="fas fa-share-alt"></i
+                ></span>
+              </div>
+              <span class="bestseller-badge sale">-25%</span>
+            </div>
+            <div class="bestseller-card-info">
+              <div class="bestseller-price-p">
+                <p class="bestseller-original-price">$40.00 </p> 
+                <p class="bestseller-discounted-price">$30.00</p>
+              </div>
+              <h3 class="bestseller-card-title">Shield Conditioner</h3>
+              <p class="bestseller-card-reviews">★★★★☆ 2947 reviews</p>
+            </div>
+          </div>
+          <!-- Product Card 2 -->
+          <div class="bestseller-card">
+            <div class="bestseller-card-image">
+              <img
+                src="./assets/images/products/product-02.jpg"
+                alt="Perfecting Facial Oil"
+              />
+              <div class="bestseller-hover-icons">
+                <span class="bestseller-icon"
+                  ><i class="fas fa-shopping-bag"></i
+                ></span>
+                <span class="bestseller-icon"><i class="fas fa-eye"></i></span>
+                <span class="bestseller-icon"><i class="fas fa-star"></i></span>
+                <span class="bestseller-icon"
+                  ><i class="fas fa-share-alt"></i
+                ></span>
+              </div>
+            </div>
+            <div class="bestseller-card-info">
+              <p class="bestseller-price">$20.00</p>
+              <h3 class="bestseller-card-title">Perfecting Facial Oil</h3>
+              <p class="bestseller-card-reviews">★★★★☆ 2947 reviews</p>
+            </div>
+          </div>
+          <!-- Product Card 3 -->
+          <div class="bestseller-card">
+            <div class="bestseller-card-image">
+              <img
+                src="./assets/images/products/product-03.jpg"
+                alt="Enriched Hand & Body Wash"
+              />
+              <div class="bestseller-hover-icons">
+                <span class="bestseller-icon"
+                  ><i class="fas fa-shopping-bag"></i
+                ></span>
+                <span class="bestseller-icon"><i class="fas fa-eye"></i></span>
+                <span class="bestseller-icon"><i class="fas fa-star"></i></span>
+                <span class="bestseller-icon"
+                  ><i class="fas fa-share-alt"></i
+                ></span>
+              </div>
+              <span class="bestseller-badge new">New</span>
+            </div>
+            <div class="bestseller-card-info">
+              <p class="bestseller-price">$29.00</p>
+              <h3 class="bestseller-card-title">Enriched Hand & Body Wash</h3>
+              <p class="bestseller-card-reviews">★★★★☆ 2947 reviews</p>
+            </div>
+          </div>
+          <!-- Product Card 4 -->
+          <div class="bestseller-card">
+            <div class="bestseller-card-image">
+              <img
+                src="./assets/images/products/product-04.jpg"
+                alt="Face Wash"
+              />
+              <div class="bestseller-hover-icons">
+                <span class="bestseller-icon"
+                  ><i class="fas fa-shopping-bag"></i
+                ></span>
+                <span class="bestseller-icon"><i class="fas fa-eye"></i></span>
+                <span class="bestseller-icon"><i class="fas fa-star"></i></span>
+                <span class="bestseller-icon"
+                  ><i class="fas fa-share-alt"></i
+                ></span>
+              </div>
+            </div>
+            <div class="bestseller-card-info">
+              <p class="bestseller-price">$15.00</p>
+              <h3 class="bestseller-card-title">Face Wash</h3>
+              <p class="bestseller-card-reviews">★★★★☆ 2500 reviews</p>
+            </div>
+          </div>
+          <!-- Product Card 5 -->
+          <div class="bestseller-card">
+            <div class="bestseller-card-image">
+              <img
+                src="./assets/images/products/product-05.jpg"
+                alt="Moisturizing Lotion"
+              />
+              <div class="bestseller-hover-icons">
+                <span class="bestseller-icon"
+                  ><i class="fas fa-shopping-bag"></i
+                ></span>
+                <span class="bestseller-icon"><i class="fas fa-eye"></i></span>
+                <span class="bestseller-icon"><i class="fas fa-star"></i></span>
+                <span class="bestseller-icon"
+                  ><i class="fas fa-share-alt"></i
+                ></span>
+              </div>
+            </div>
+            <div class="bestseller-card-info">
+              <p class="bestseller-price">$25.00</p>
+              <h3 class="bestseller-card-title">Moisturizing Lotion</h3>
+              <p class="bestseller-card-reviews">★★★★☆ 3000 reviews</p>
+            </div>
+          </div>
+          <!-- Product Card 6 -->
+          <div class="bestseller-card bestseller-card-special">
+            <div class="bestseller-card-image">
+              <img
+                src="./assets/images/products/product-06.jpg"
+                alt="Special Product"
+              />
+              <div class="bestseller-hover-icons">
+                <span class="bestseller-icon"
+                  ><i class="fas fa-shopping-bag"></i
+                ></span>
+                <span class="bestseller-icon"><i class="fas fa-eye"></i></span>
+                <span class="bestseller-icon"><i class="fas fa-star"></i></span>
+                <span class="bestseller-icon"
+                  ><i class="fas fa-share-alt"></i
+                ></span>
+              </div>
+            </div>
+            <div class="bestseller-card-info">
+              <p class="bestseller-price">$35.00</p>
+              <h3 class="bestseller-card-title">Special Product</h3>
+              <p class="bestseller-card-reviews">★★★★☆ 5000 reviews</p>
+            </div>
+          </div>
+        </div>
+        <!-- Carousel Dots -->
+        <div class="bestseller-carousel-dots">
+          <span class="bestseller-dot active"></span>
+          <span class="bestseller-dot"></span>
+        </div>
+      </div>
+    </section>
+
+<!-- Product Cards - Under $25 -->
+<section class="bestseller-carousel">
+  <div class="bestseller-title-row">
+    <h2 class="bestseller-title">Under $25</h2>
+    <a href="#" class="bestseller-shop-link">Shop All Products →</a>
+  </div>
+  <div class="bestseller-carousel-wrapper">
+    <div class="bestseller-carousel-items">
+      <!-- Product Card 1 -->
+      <div class="bestseller-card">
+        <div class="bestseller-card-image">
+          <img
+            src="./assets/images/products/product-01.jpg"
+            alt="Shield Conditioner"
+          />
+          <div class="bestseller-hover-icons">
+            <span class="bestseller-icon"
+              ><i class="fas fa-shopping-bag"></i
+            ></span>
+            <span class="bestseller-icon"><i class="fas fa-eye"></i></span>
+            <span class="bestseller-icon"><i class="fas fa-star"></i></span>
+            <span class="bestseller-icon"
+              ><i class="fas fa-share-alt"></i
+            ></span>
+          </div>
+          <span class="bestseller-badge sale">-25%</span>
+        </div>
+        <div class="bestseller-card-info">
+          <div class="bestseller-price-p">
+            <p class="bestseller-original-price">$40.00 </p> 
+            <p class="bestseller-discounted-price">$30.00</p>
+          </div>
+          <h3 class="bestseller-card-title">Shield Conditioner</h3>
+          <p class="bestseller-card-reviews">★★★★☆ 2947 reviews</p>
+        </div>
+      </div>
+      <!-- Product Card 2 -->
+      <div class="bestseller-card">
+        <div class="bestseller-card-image">
+          <img
+            src="./assets/images/products/product-02.jpg"
+            alt="Perfecting Facial Oil"
+          />
+          <div class="bestseller-hover-icons">
+            <span class="bestseller-icon"
+              ><i class="fas fa-shopping-bag"></i
+            ></span>
+            <span class="bestseller-icon"><i class="fas fa-eye"></i></span>
+            <span class="bestseller-icon"><i class="fas fa-star"></i></span>
+            <span class="bestseller-icon"
+              ><i class="fas fa-share-alt"></i
+            ></span>
+          </div>
+        </div>
+        <div class="bestseller-card-info">
+          <p class="bestseller-price">$20.00</p>
+          <h3 class="bestseller-card-title">Perfecting Facial Oil</h3>
+          <p class="bestseller-card-reviews">★★★★☆ 2947 reviews</p>
+        </div>
+      </div>
+      <!-- Product Card 3 -->
+      <div class="bestseller-card">
+        <div class="bestseller-card-image">
+          <img
+            src="./assets/images/products/product-03.jpg"
+            alt="Enriched Hand & Body Wash"
+          />
+          <div class="bestseller-hover-icons">
+            <span class="bestseller-icon"
+              ><i class="fas fa-shopping-bag"></i
+            ></span>
+            <span class="bestseller-icon"><i class="fas fa-eye"></i></span>
+            <span class="bestseller-icon"><i class="fas fa-star"></i></span>
+            <span class="bestseller-icon"
+              ><i class="fas fa-share-alt"></i
+            ></span>
+          </div>
+          <span class="bestseller-badge new">New</span>
+        </div>
+        <div class="bestseller-card-info">
+          <p class="bestseller-price">$29.00</p>
+          <h3 class="bestseller-card-title">Enriched Hand & Body Wash</h3>
+          <p class="bestseller-card-reviews">★★★★☆ 2947 reviews</p>
+        </div>
+      </div>
+      <!-- Product Card 4 -->
+      <div class="bestseller-card">
+        <div class="bestseller-card-image">
+          <img
+            src="./assets/images/products/product-04.jpg"
+            alt="Face Wash"
+          />
+          <div class="bestseller-hover-icons">
+            <span class="bestseller-icon"
+              ><i class="fas fa-shopping-bag"></i
+            ></span>
+            <span class="bestseller-icon"><i class="fas fa-eye"></i></span>
+            <span class="bestseller-icon"><i class="fas fa-star"></i></span>
+            <span class="bestseller-icon"
+              ><i class="fas fa-share-alt"></i
+            ></span>
+          </div>
+        </div>
+        <div class="bestseller-card-info">
+          <p class="bestseller-price">$15.00</p>
+          <h3 class="bestseller-card-title">Face Wash</h3>
+          <p class="bestseller-card-reviews">★★★★☆ 2500 reviews</p>
+        </div>
+      </div>
+      <!-- Product Card 5 -->
+      <div class="bestseller-card">
+        <div class="bestseller-card-image">
+          <img
+            src="./assets/images/products/product-05.jpg"
+            alt="Moisturizing Lotion"
+          />
+          <div class="bestseller-hover-icons">
+            <span class="bestseller-icon"
+              ><i class="fas fa-shopping-bag"></i
+            ></span>
+            <span class="bestseller-icon"><i class="fas fa-eye"></i></span>
+            <span class="bestseller-icon"><i class="fas fa-star"></i></span>
+            <span class="bestseller-icon"
+              ><i class="fas fa-share-alt"></i
+            ></span>
+          </div>
+        </div>
+        <div class="bestseller-card-info">
+          <p class="bestseller-price">$25.00</p>
+          <h3 class="bestseller-card-title">Moisturizing Lotion</h3>
+          <p class="bestseller-card-reviews">★★★★☆ 3000 reviews</p>
+        </div>
+      </div>
+      <!-- Product Card 6 -->
+      <div class="bestseller-card bestseller-card-special">
+        <div class="bestseller-card-image">
+          <img
+            src="./assets/images/products/product-06.jpg"
+            alt="Special Product"
+          />
+          <div class="bestseller-hover-icons">
+            <span class="bestseller-icon"
+              ><i class="fas fa-shopping-bag"></i
+            ></span>
+            <span class="bestseller-icon"><i class="fas fa-eye"></i></span>
+            <span class="bestseller-icon"><i class="fas fa-star"></i></span>
+            <span class="bestseller-icon"
+              ><i class="fas fa-share-alt"></i
+            ></span>
+          </div>
+        </div>
+        <div class="bestseller-card-info">
+          <p class="bestseller-price">$35.00</p>
+          <h3 class="bestseller-card-title">Special Product</h3>
+          <p class="bestseller-card-reviews">★★★★☆ 5000 reviews</p>
+        </div>
+      </div>
+    </div>
+    <!-- Carousel Dots -->
+    <div class="bestseller-carousel-dots">
+      <span class="bestseller-dot active"></span>
+      <span class="bestseller-dot"></span>
+    </div>
+  </div>
+</section>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

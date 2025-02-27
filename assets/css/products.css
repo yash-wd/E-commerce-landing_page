@@ -1,0 +1,348 @@
+.bestseller-carousel {
+  padding: 50px 15px 10px 15px;
+}
+
+/* Title Row Alignment */
+.bestseller-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.bestseller-title-row h2 {
+  font-size: 34px !important;
+  font-weight: 600 !important;
+  line-height: 44.2px !important;
+  color: #000;
+}
+
+.bestseller-title-row a {
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  line-height: 26px !important;
+  color: #000;
+  text-decoration: none;
+}
+
+.bestseller-title-row a:hover {
+  color: #7e7e7e;
+}
+
+/* Carousel Wrapper */
+.bestseller-carousel-wrapper {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+/* Carousel Items */
+.bestseller-carousel-items {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+/* Product Card */
+.bestseller-card {
+  width: 200px;
+  min-width: 18.8%;
+  background: #fff;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  transition: transform 2s ease, opacity 2s ease, box-shadow 0.3s ease;
+}
+
+.bestseller-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Smooth Scrolling Adjustments */
+.bestseller-card:first-child.scroll-down {
+  transform: translateY(105%);
+  opacity: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+.bestseller-card:first-child.reset {
+  transform: translateY(0);
+  opacity: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.bestseller-card-special {
+  position: relative;
+  transform: translateY(105%);
+  transition: transform 2s ease, opacity 2s ease;
+}
+
+.bestseller-card-special.scroll-up {
+  transform: translateY(0);
+  opacity: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.bestseller-card-special.reset {
+  transform: translateY(105%);
+  opacity: 0;
+  position: absolute;
+  z-index: 0;
+}
+
+/* Product Card Image */
+.bestseller-card-image {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+  margin-bottom: 15px;
+}
+
+.bestseller-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.bestseller-card:hover .bestseller-card-image img {
+  transform: scale(1.1);
+}
+
+/* Hover Icons */
+.bestseller-hover-icons {
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  transition: bottom 0.5s ease;
+}
+
+.bestseller-card:hover .bestseller-hover-icons {
+  bottom: 15px;
+}
+
+/* Hover Icons Animation */
+.bestseller-hover-icons span {
+  opacity: 0;
+  transform: translateY(10px);
+  background-color: #fff;
+  padding: 9px 15px;
+  border-radius: 50%;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.bestseller-card:hover .bestseller-hover-icons span:nth-child(1) {
+  transition-delay: 0.2s;
+}
+
+.bestseller-card:hover .bestseller-hover-icons span:nth-child(2) {
+  transition-delay: 0.4s;
+}
+
+.bestseller-card:hover .bestseller-hover-icons span:nth-child(3) {
+  transition-delay: 0.6s;
+}
+
+.bestseller-card:hover .bestseller-hover-icons span:nth-child(4) {
+  transition-delay: 0.8s;
+}
+
+.bestseller-card:hover .bestseller-hover-icons span {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Keyframes for Hover Icons */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Product Badge */
+.bestseller-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  z-index: 1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bestseller-badge.sale {
+  background-color: #ff4d4d;
+}
+
+.bestseller-badge.new {
+  background-color: #ffd700;
+}
+
+/* Carousel Dots */
+.bestseller-carousel-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  z-index: 3;
+  margin: 25px auto;
+}
+
+.bestseller-carousel-dots .bestseller-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s, border 0.3s, transform 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bestseller-carousel-dots .bestseller-dot.active {
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border: 1px solid #000;
+  box-sizing: border-box;
+}
+
+.bestseller-price-p {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.bestseller-original-price {
+  color: #7e7e7e;
+  text-decoration: line-through;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+}
+
+.bestseller-discounted-price,
+.bestseller-price {
+  color: black;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  font-weight: bold;
+}
+
+.bestseller-card-title {
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  line-height: 19.5px !important;
+  color: #000;
+}
+
+.bestseller-card-title:hover {
+color: #4e7661;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  /* For tablets */
+  .bestseller-card {
+    width: 180px;
+    min-width: 25%;
+  }
+
+  .bestseller-card-image {
+    height: 180px;
+  }
+
+  .bestseller-badge {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+
+  .bestseller-title-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .bestseller-title-row h2 {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* For small tablets and large phones */
+  .bestseller-card {
+    width: 160px;
+    min-width: 33.33%; /* 3 cards per row */
+  }
+
+  .bestseller-card-image {
+    height: 160px;
+  }
+
+  .bestseller-title-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .bestseller-title-row h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* For mobile phones */
+  .bestseller-card {
+    width: 100%;
+    min-width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .bestseller-card-image {
+    height: 150px;
+  }
+
+  .bestseller-hover-icons {
+    bottom: -40px;
+  }
+
+  .bestseller-card:hover .bestseller-hover-icons {
+    bottom: 10px;
+  }
+
+  .bestseller-badge {
+    font-size: 10px;
+    padding: 3px 6px;
+  }
+
+  .bestseller-title-row h2 {
+    font-size: 18px;
+  }
+
+  .bestseller-title-row a {
+    font-size: 14px;
+  }
+
+  .bestseller-carousel-wrapper {
+    padding: 0 10px;
+  }
+
+  .bestseller-carousel-dots {
+    margin-top: 10px;
+  }
+}
